@@ -9,7 +9,7 @@ class Burger {
     constructor(size, add, topping) {
         this.size = new Param(this._select(size));
         this.add = new Param(this._select(add));
-        this.topping = this._getToppings(topping);
+        this.toppings = this._getToppings(topping);
     }
 
     _getToppings(name) {
@@ -31,13 +31,13 @@ class Burger {
 
     _sumPrice() {
         let result = this.size.price + this.add.price;
-        this.topping.forEach(el => result += el.price);
+        this.toppings.forEach(el => result += el.price);
         return result;
     }
 
     _sumCalories() {
         let result = this.size.calories + this.add.calories;
-        this.topping.forEach(el => result += el.calories);
+        this.toppings.forEach(el => result += el.calories);
         return result;
     }
 
