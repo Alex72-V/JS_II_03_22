@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" id="hamburger-form">
+        <fieldset id="hamburger-fieldset">
+            <h3 id="hamburger-top">Составить бургер</h3>
+            <fieldset class="hamburger-fieldset-inside">
+                <h4>Размер гамбургера</h4>
+                <input type="radio" name="size" id="bigburger" value="Big" 
+                class="hamburger-input" data-price="100" data-calories="40"
+                checked>
+                <label for="bigburger">
+                    Большой (100 руб, 40 ккал)
+                </label> <br>
+                <input type="radio" name="size" id="smallburger" value="Small" 
+                class="hamburger-input" data-price="50" data-calories="20">
+                <label for="smallburger">
+                    Малый (50 руб, 20 ккал)
+                </label>
+            </fieldset>
+            <fieldset class="hamburger-fieldset-inside">
+                <h4>Выберите начинку</h4>
+                <input type="radio" name="add" id="chees" value="Chees"
+                class="hamburger-input" data-price="10" 
+                data-calories="20" checked>
+                <label for="chees">
+                    Сыр (10 руб, 20 ккал)
+                </label> <br>
+
+                <input type="radio" name="add" id="salad" value="Salad"
+                class="hamburger-input" data-price="20" 
+                data-calories="5" checked>
+                <label for="salad">
+                    Салат (20 руб, 5 ккал)
+                </label> <br>
+
+                <input type="radio" name="add" id="potato" value="Potato"
+                class="hamburger-input" data-price="15" 
+                data-calories="10" checked>
+                <label for="potato">
+                    Картофель (15 руб, 10 ккал)
+                </label> <br>
+            </fieldset>
+            <fieldset class="hamburger-fieldset-inside">
+                <h4>Дополнительно</h4>
+                <input type="checkbox" name="topings" id="seasoning" 
+                value="Spices" class="hamburger-input" data-price="15" 
+                data-calories="0">
+                <label for="seasoning">
+                    Острый (15 руб, 0 ккал)
+                </label> <br>
+
+                <input type="checkbox" name="topings" id="maionnaise" 
+                value="Maio" class="hamburger-input" data-price="20" 
+                data-calories="5">
+                <label for="maionnaise">
+                    Майонез (20 руб, 5 ккал)
+                </label> <br>
+            </fieldset>
+
+            <div id="check">Применить</div>
+
+            <p id="result">Итоговая стоимость: <span id="price">0</span> <br>
+            Энергетическая ценность: <span id="calories">0</span></p>
+        </fieldset>
+    </form>
+    <script src="burgerFactory.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById("check").addEventListener('click', () => {
+                let burger = new Burger('size','add','topings');
+                console.log(burger);
+                burger.showSum("#price","#calories");// # - в данном случае ID
+            });
+        }
+    </script>
+</body>
+</html>
