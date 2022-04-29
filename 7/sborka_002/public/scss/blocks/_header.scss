@@ -1,0 +1,189 @@
+.header {
+    background-color: $black;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin: 0 71px 0 0;
+    min-width: 44px;
+    min-height: 38px;
+
+    @include mobile {
+        margin: 0 10% 0 0;
+    }
+}
+
+.header__link-logo {
+    margin: 0px 71px 0 0;
+
+    @include mobile {
+        margin: 0px 32px 0 0;
+    }
+}
+
+.header__logo-img:hover,
+.header__logo-img:focus {
+    opacity: 0.6;
+}
+
+.header__button {
+    background-color: transparent;
+    border: 0;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__link--person {
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__link--basket {
+    @include tablet-max {
+        margin: 0 0 0 42px;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__wrp-logo-form {
+    display: flex;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: -42px;
+    background-image: url(../img/loupe.svg);
+    margin: 6px 0 0 0;
+
+    // background-size: 26px 26px;
+    @include mobile {
+        left: 0px;
+    }
+}
+
+.header__search:before:hover {
+    fill: $pink-text
+}
+
+.header__search-input {
+    width: 70%;
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid black;
+
+    @include mobile {
+        width: 50%;
+        margin: 0 0 0 40px;
+    }
+
+}
+
+.header__search-input:hover {
+    outline: 1px solid red;
+}
+
+.header__link-basket-count {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: $pink-text;
+    content: '5';
+    color: white;
+    border-radius: 50%;
+    top: -12px;
+    right: -10px;
+    text-align: center;
+}
+
+.header__link--basket {
+    position: relative;
+}
+
+.header__nav-group {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.header__menu {
+    position: absolute;
+    width: 232px;
+    min-height: 95vh;
+    top: 100%;
+    right: 30px;
+    background: white;
+    z-index: 5;
+    display: none;
+    padding: 37px 0 0 34px;
+}
+
+.header__button:hover+.header__menu,
+.header__button:focus+.header__menu {
+    display: block;
+}
+
+.header__menu:hover {
+    display: block;
+}
+
+.header__menu-list:hover {
+    display: block;
+}
+
+.header__button-burger-background {
+    fill: black;
+}
+
+.header__button-burger-img {
+    fill: #E8E8E8;
+}
+
+.header__button {
+    padding: 0 2px;
+}
+
+.header__button:hover .header__button-burger-img,
+.header__button:focus.header__button-burger-img {
+    fill: $pink-text;
+}
+
+.header__link-background {
+    padding: 2px 2px;
+}
+
+.header__link-img {
+    fill: #E8E8E8;
+}
+
+.header__link:focus .header__link-img,
+.header__link:hover .header__link-img {
+
+    fill: $pink-text;
+}
+
+.header__menu-item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

@@ -1,0 +1,27 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 4,
+            "id_product": 101,
+            "product_name": "Странная куртка",
+            "price": 1600,
+            "imgPath": "img/101.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 102,
+            "product_name": "Брючный костюм",
+            "price": 3000,
+            "imgPath": "img/102.jpg"
+        },
+        {
+            "quantity": 2,
+            "id_product": 103,
+            "product_name": "Шорты со свитером",
+            "price": 4600,
+            "imgPath": "img/103.jpg"
+        }
+    ]
+}
