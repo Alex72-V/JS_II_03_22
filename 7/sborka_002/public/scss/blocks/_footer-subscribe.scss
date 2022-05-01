@@ -1,0 +1,131 @@
+.footer-subscribe {
+    display: flex;
+    min-height: 448px;
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.footer-subscribe__div {
+    min-height: 448px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    @include tablet-max {
+        max-height: 693px;
+        flex-direction: column;
+        justify-content: start;
+        padding: 54px 23% 140px;
+
+    }
+
+    @include mobile {
+        max-height: 550px;
+        flex-direction: column;
+        justify-content: start;
+        padding: 54px 10% 110px;
+
+    }
+
+}
+
+.footer-subscribe__wrp {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet-max {
+        width: 100%;
+        margin: 48px 0 0 0;
+    }
+
+    @include mobile {
+        margin: 59px 0 0 0;
+    }
+
+    .footer-subscribe__img {
+        width: 120px;
+    }
+}
+
+.footer-subscribe__img-text {
+    @include font(20px, 24px);
+    text-align: center;
+    margin: 24px 0 0 0;
+
+    @include mobile {
+        @include font(18px, 22px);
+    }
+}
+
+.footer-subscribe__img-text--italic {
+    font-style: italic;
+}
+
+.footer-subscribe__title {
+    @include font(24px, 40px, 700);
+    text-transform: uppercase;
+
+}
+
+.footer-subscribe__text {
+    @include font(18px, 30px);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 32px 0;
+
+
+    @include tablet-max {
+        margin: 0 0 27px 0;
+    }
+
+
+    @include mobile {
+        @include font(14px, 22px);
+        margin: 0 0 22px 0;
+
+    }
+}
+
+.footer-subscribe__input-field {
+    display: flex;
+}
+
+.footer-subscribe__input {
+    min-height: 49px;
+    width: 100%;
+    background: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    padding: 0 0 0 22px;
+    display: block;
+    outline: 0px solid;
+    background: #E1E1E1;
+    box-sizing: border-box;
+    border: none;
+}
+
+.footer-subscribe__input:hover,
+.footer-subscribe__input:focus {
+    outline: 1px solid red;
+    background: white;
+    cursor: pointer;
+}
+
+.footer-subscribe__button {
+    border-radius: 0 25px 25px 0;
+    min-height: 50px;
+    background-color: $pink-text;
+    border: none;
+    color: #FFFFFF;
+}
+
+.footer-subscribe__button:hover,
+.footer-subscribe__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
