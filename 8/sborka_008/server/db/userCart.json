@@ -1,0 +1,41 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 4,
+            "id_product": 102,
+            "product_name": "Брючный костюм",
+            "price": 3000,
+            "imgPath": "img/102.jpg"
+        },
+        {
+            "quantity": 4,
+            "id_product": 104,
+            "product_name": "Песчаные штаны",
+            "price": 1000,
+            "imgPath": "img/104.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 106,
+            "product_name": "Полосатая блузка",
+            "price": 1000,
+            "imgPath": "img/106.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 105,
+            "product_name": "Женский пиджак",
+            "price": 5000,
+            "imgPath": "img/105.jpg"
+        },
+        {
+            "quantity": 5,
+            "id_product": 103,
+            "product_name": "Шорты со свитером",
+            "price": 4600,
+            "imgPath": "img/103.jpg"
+        }
+    ]
+}
